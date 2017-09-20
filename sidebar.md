@@ -1,18 +1,19 @@
-# [ECMAScript 6 入门]()
+# [xingyiqi's blog]()
 
-作者：[阮一峰](http://www.ruanyifeng.com)
+作者：[xingqiyi](https://xingqiyi.github.io/blog)
 
-授权：<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">署名-非商用许可证</a>
+<!-- 授权：<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">署名-非商用许可证</a> -->
 
 ## 目录
+
 1. [前言](#README)
 
-
-
-
- 
+### 前端
+---
 1. [js](#src/js)
 1. [css](#src/css)
+
+### 工具
 ---
 1. [git](#src/git)
 1. [md](#src/md)
@@ -20,16 +21,22 @@
 1. [npm](#src/npm)
 1. [vscode](#src/vscode)
 1. [eslint](#src/eslint)
+
+### RN
 --- 
 1. [react](#src/react)
 1. [redux](#src/redux)
 1. [RN_android](#src/RN_android)
 1. [RN_ios](#src/RN_ios)
 1. [RN_环境配置](#src/RN_环境配置)
+
+### 系统
 ---
 1. [shell](#src/shell)
 1. [linux](#src/linux)
 1. [kubuntu](#src/kubuntu)
+
+### Node
 ---
 1. [node](#src/node)
 1. [pm2](#src/pm2)
@@ -40,7 +47,7 @@
 
 
 
-## 其他
+<!-- ## 其他
 - [源码](http://github.com/ruanyf/es6tutorial/)
 - [修订历史](https://github.com/ruanyf/es6tutorial/commits/gh-pages)
-- [反馈意见](https://github.com/ruanyf/es6tutorial/issues)
+- [反馈意见](https://github.com/ruanyf/es6tutorial/issues) -->
