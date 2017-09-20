@@ -6,33 +6,39 @@
 
 ## 目录
 1. [前言](#README)
-1. [ECMAScript 6简介](#docs/intro)
-1. [let 和 const 命令](#docs/let)
-1. [变量的解构赋值](#docs/destructuring)
-1. [字符串的扩展](#docs/string)
-1. [正则的扩展](#docs/regex)
-1. [数值的扩展](#docs/number)
-1. [函数的扩展](#docs/function)
-1. [数组的扩展](#docs/array)
-1. [对象的扩展](#docs/object)
-1. [Symbol](#docs/symbol)
-1. [Set 和 Map 数据结构](#docs/set-map)
-1. [Proxy](#docs/proxy)
-1. [Reflect](#docs/reflect)
-1. [Promise 对象](#docs/promise)
-1. [Iterator 和 for...of 循环](#docs/iterator)
-1. [Generator 函数的语法](#docs/generator)
-1. [Generator 函数的异步应用](#docs/generator-async)
-1. [async 函数](#docs/async)
-1. [Class 的基本语法](#docs/class)
-1. [Class 的继承](#docs/class-extends)
-1. [Decorator](#docs/decorator)
-1. [Module 的语法](#docs/module)
-1. [Module 的加载实现](#docs/module-loader)
-1. [编程风格](#docs/style)
-1. [读懂规格](#docs/spec)
-1. [ArrayBuffer](#docs/arraybuffer)
-1. [参考链接](#docs/reference)
+
+
+
+
+ 
+1. [js](#src/js)
+1. [css](#src/css)
+---
+1. [git](#src/git)
+1. [md](#src/md)
+1. [yarn](#src/yarn)
+1. [npm](#src/npm)
+1. [vscode](#src/vscode)
+1. [eslint](#src/eslint)
+--- 
+1. [react](#src/react)
+1. [redux](#src/redux)
+1. [RN_android](#src/RN_android)
+1. [RN_ios](#src/RN_ios)
+1. [RN_环境配置](#src/RN_环境配置)
+---
+1. [shell](#src/shell)
+1. [linux](#src/linux)
+1. [kubuntu](#src/kubuntu)
+---
+1. [node](#src/node)
+1. [pm2](#src/pm2)
+1. [redis](#src/redis)
+---
+
+
+
+
 
 ## 其他
 - [源码](http://github.com/ruanyf/es6tutorial/)

@@ -1,0 +1,60 @@
+
+
+ 
+
+ 
+webstorm  
+
+ctrl+]/[	 	
+
+F3	 	 
+Alt + F8       format
+ctrl + /       注释
+Ctrl+Shift+/   跨行注释
+ctrl + F11   add bookmark
+ 
+
+ctrl + shift + F7  search usage
+Shift+F6	       rename all occurrence
+Ctrl+D	  
+Ctrl+X	  
+Ctrl+C	 
+Ctrl + Shift + U   lowercase
+Ctrl + Backspace   Ctrl + Delete    按单词删除
+Ctrl+Shift+Up/Down	 上下行切换
+F3   
+Shift + F3   
+Alt + up/down   上一个函数
+Ctrl + Shift + F   
+Watch  F2   
+
+ctrl + shift + N   搜索,切换文件
+ctrl + shift + B/右上角搜索框   search everywhree
+
+
+
+
+sublime
+
+{ "keys": ["ctrl+shift+l"], "command": "split_selection_into_lines" }  
+{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+{ "keys": ["f3"], "command": "find_under_expand" },
+{ "keys": ["shift+f3"], "command": "find_under_prev" },
+{ "keys": ["alt+f3"], "command": "find_all_under" },
+
+
+
+
+
+navicat
+
+1.ctrl+q  
+2.ctrl+/  
+3.ctrl+shift +/ 
+
+
+
+
+
+
+
