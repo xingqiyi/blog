@@ -3,13 +3,13 @@
 
 `Alt + 上下键`   切换行
 
-`Alt + 左键`     选择多个位置
+`Ctrl + 左键`     选择多个位置    可改为 Alt
+
+`Ctrl + Shift + 左键`   选择多行   改为 Alt
 
 `F3` 选中下一个重复的
 
 `Ctrl + Shift + L`  选中所有 重复的
-
-`Alt + Shift + 左键`   选择多行
 
 `Ctrl + Shift + J`  搜索时 设置条件
 
