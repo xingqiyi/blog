@@ -100,7 +100,7 @@ jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"index.ios" withExtensio
 
 ##  打包
 ```
-打包 需要在 ios   文件夹; android 需要新建assets 文件夹
+打包 需要在  新建  ios/bundle   文件夹; android 需要新建assets 文件夹
  
  http://blog.csdn.net/sinat_34380438/article/details/76614309
 
