@@ -1,7 +1,6 @@
 
 
-## 1
-
+## 
 初始化  版本指定
 react-native init AwesomeProject  --version 0.44.3
 
@@ -9,7 +8,7 @@ react-native init AwesomeProject  --version 0.44.3
 
 
 
-## 2 no bundle url present make sure
+## no bundle url present make sure
 
 ```
 Edit <your_project_folder>/ios/<project_name>/AppDelegate.m and change the jsCodeLocation variable as follows:
@@ -20,15 +19,14 @@ jsCodeLocation =
 
 
 
- ## 3
-
+## 
  在开发者菜单中选择"Debug JS Remotely"选项，
  即可以开始在Chrome中调试JavaScript代码。点击这个选项的同时会自动打开调试页面 http://localhost:8081/debugger-ui.
 
 
 
 
-## 4 ios 真机 调试
+## ios 真机 调试
 
 RCTWebSocketExecutor.m
 localhost 改 ip
@@ -38,15 +36,14 @@ jsCodeLocation =   [NSURL URLWithString:@"http://192.168.1.255:8081/index.ios.bu
 
 
 
-## 5
-真机调试 设置 team 报错
+## 真机调试 设置 team 报错
 Failed to create provisioning profile. The app ID
 
 选择 ssr
 
 
 
-## 6  真机调试时  打包时
+##  真机调试时  打包时
 
 Please unlock your device and reattach. (0xE80000E2).
 
@@ -58,7 +55,7 @@ Please unlock your device and reattach. (0xE80000E2).
 
 
 
-## 7  No devices are booted.
+##  No devices are booted.
 
 重启模拟器
 
@@ -73,14 +70,14 @@ Command react-native run-ios again
 
 
 
-## 8 Print: Entry, ":CFBundleIdentifier", Does Not Exist
+## Print: Entry, ":CFBundleIdentifier", Does Not Exist
 ```
 rm -rf ~/.rncache
 
 ```
 
 
-## 9 模拟器 与真机直接的切换   打包时需改成真机
+## 模拟器 与真机直接的切换   打包时需改成真机
 
 ``` 
 AppDelegate.m
@@ -90,22 +87,58 @@ AppDelegate.m
 jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"index.ios" withExtension:@"jsbundle"];
 ```
 
-## 10 
+##  
 
-## 11 no dimension set for key window
+##  no dimension set for key window
 
 ```
 删掉 ios/build 重运行
 ```
 
 
-## 12 根目录文件不能叫 index.js   猜测应该是与 index.ios.js 冲突
+##  根目录文件不能叫 index.js   猜测应该是与 index.ios.js 冲突
 
-## 13 打包
+##  打包
 ```
-打包 需要在 ios   文件夹; android 需要新建assets 文件夹
+打包 需要在  新建  ios/bundle   文件夹; android 需要新建assets 文件夹
  
  http://blog.csdn.net/sinat_34380438/article/details/76614309
 
 
 ```
+
+## 报错：Invariant Violation:Application XXXX has not been registered.
+
+A：请确保index.*.js中的
+
+AppRegistry.registerComponent('项目名',() => ...);
+与appDelegate.m中的
+
+RCTRootView*rootView = [[RCTRootViewalloc]initWithBundleURL:jsCodeLocation
+moduleName:@"项目名" launchOptions:launchOptions];
+或是MainActivity.java中的
+
+@Override
+protected String getMainComponentName() {
+  return "项目名";
+}
+都保持一致。
+
+
+## 
+Q：有一些示例代码中有奇怪的问号，比如function foo(x:?string)，代表什么意思？
+
+A：这是通过一个名为flow的外部工具为javascript加上强类型检查的功能，不影响编译和运行。直接无视就好。
+
+
+##  Failed to create provisioning profile
+
+
+
+I have had this error multiple times and what solves it for me is the following:
+
+In the list with the view of all certificates, right click on each row and move each certificate to trash (go to Xcode > Preferences > Choose account > Click View Details)
+Go to member center download the right certificates again and click on them so
+Restart Xcode
+Go to build settings and set the right Code signing for debug/release - you should be able to see an option on the row that says "Identities from profile..."
+If this doesn't work then you should consider revoking your certificate and then create a new one and the do the steps above again.
