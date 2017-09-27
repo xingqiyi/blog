@@ -25,6 +25,8 @@
 
 `Shift + F12`   查看所有引用
 
+`Alt + C`       切换 F3 的 大小写 限制 case sensitive
+
 
 
 ## 查找
