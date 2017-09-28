@@ -99,7 +99,7 @@ react-native bundle --platform android --dev false --entry-file index.android.js
 - 7 Again rerun application and thus build apk is ready for running.
 
 
-## 9 android 打包步骤
+## 9 android 打包步骤 debug
 
 - 1 添加文件夹: \android\app\src\main\assets
 - 2 运行 react-native run-android
@@ -107,3 +107,71 @@ react-native bundle --platform android --dev false --entry-file index.android.js
 - 4 运行 react-native run-android
 - 5 \android\app\build\outputs\apk\app-debug.apk
 - 6 如果图片异常,复制图片到 assets文件夹,rerun
+
+## 真机调试 
+ (https://facebook.github.io/react-native/docs/running-on-device.html)
+
+-  通过 usb
+
+> adb reverse tcp:8081 tcp:8081
+> 执行 npm start 开启服务器即可,不需要每次 run-android 
+
+- 通过 wifi
+
+> app菜单 - Dev Setting 设置ip:port
+
+
+## Generating Signed APK , 打包apk
+
+http://reactnative.cn/docs/next/signed-apk-android.html#content
+
+1. keytool -genkey -v -keystore my-release-key.keystore -alias rn-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
+ 密码: 123456
+
+2. 把生成的 my-release-key.keystore 文件放到你工程中的android/app文件夹下。
+
+3. 编辑~/.gradle/gradle.properties
+
+MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
+MYAPP_RELEASE_KEY_ALIAS=rn-key-alias
+MYAPP_RELEASE_STORE_PASSWORD=123456
+MYAPP_RELEASE_KEY_PASSWORD=123456
+
+3.
+添加签名到项目的gradle配置文件
+编辑你项目目录下的android/app/build.gradle
+```
+android {
+    ...
+    defaultConfig { ... }
+    signingConfigs {
+        release {
+            storeFile file(MYAPP_RELEASE_STORE_FILE)
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            ...
+            signingConfig signingConfigs.release
+        }
+    }
+}
+```
+4.生成 apk 
+cd android && ./gradlew assembleRelease
+
+android/app/build/outputs/apk/app-release.apk
+
+5. 测试应用的发行版本
+ cd android && ./gradlew installRelease
+
+
+
+## 打包步骤 4 报错:
+ Unable to process incoming event 'ProgressComplete ' (ProgressCompleteEvent)
+添加参数:
+ .\gradlew assembleRelease --console plain
