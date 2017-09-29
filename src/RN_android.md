@@ -75,7 +75,7 @@ buildscript {
 
 https://stackoverflow.com/questions/34175416/how-to-use-offline-bundle-on-android-for-react-native-project
 
-```css
+```
 react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
 
 ```
