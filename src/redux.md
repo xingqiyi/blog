@@ -1,6 +1,8 @@
 
 # redux
 
+
+
 1. 用户发出Action
 ```js
 store.dispatch(action);
@@ -44,6 +46,13 @@ React-Redux 提供connect方法，用于从 UI 组件生成容器组件。connec
 Provider在根组件外面包了一层，这样一来，App的所有子组件就默认都可以拿到state了
 
 
-# redux-thunk
+# redux 中间件
 
-# redux-saga 
+
+## redux-thunk
+
+
+## redux-saga 
+
+
+## redux-logger 
