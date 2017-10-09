@@ -3,40 +3,40 @@
 
 ## JS环境
 
-### 1. Chocolatey
+### Chocolatey
 ```
 管理员打开 cmd
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 ```
 
-#### 2. python
+#### python
 ```
 choco install python2
 ```
 
-### 3. nodejs
+### nodejs
 ```
 choco install nodejs.install
 ```
 
-### 4. npm 设置
+### npm 设置
 ```
 npm config set registry https://registry.npm.taobao.org --global
 npm config set disturl https://npm.taobao.org/dist --global
 ```
 
-### 5. yarn, rn命令行工具安装
+### yarn, rn命令行工具安装
 ```
 npm install -g yarn react-native-cli
 ```
 
-### 6. yarn 设置
+### yarn 设置
 ```
 yarn config set registry https://registry.npm.taobao.org --global
 yarn config set disturl https://npm.taobao.org/dist --global
 ```
 
-### 7. 系统环境变量
+### 系统环境变量
 ```
 npm:
 C:\Users\admin\AppData\Roaming\npm
