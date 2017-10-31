@@ -20,7 +20,7 @@
 
 ## git tag
 
-- `git tag -a v1.4 -m 'my version 1.4' ` 添加标签
+- `git tag -a v1.4 -m 'myversion1.4' ` 添加标签
 - `git push origin v1.5 `  标签推送到服务器
 - `git push origin --tags `推送所有标签
 

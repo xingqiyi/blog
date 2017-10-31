@@ -175,3 +175,17 @@ android/app/build/outputs/apk/app-release.apk
  Unable to process incoming event 'ProgressComplete ' (ProgressCompleteEvent)
 添加参数:
  .\gradlew assembleRelease --console plain
+
+
+
+ ## drawable vs mipmap
+图片应该放在drawable文件夹下，而mipmap文件夹只适合放app icons ，之前Android Studio 1.1版本的时候app icons上上传几个不同分辨率的图片，
+而现在Android Studio 2.1.2 已经把mipmap文件夹默认分为了不同分辨率的文件夹，方便适配。
+
+
+## The SDK Build Tools revision (23.0.2) is too low for project ':jcore-react-native'. Minimum required is 25.0.0
+android/build.grandle
+```
+  classpath 'com.android.tools.build:gradle:2.2.3'
+```
+
