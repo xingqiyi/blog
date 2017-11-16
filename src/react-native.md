@@ -8,8 +8,7 @@
 
 ### Flex
 justifyContent是相对于主轴的对齐方式，而alignItems是相对于交叉轴的对齐方式。
-主轴和交叉轴是相对于flexDireaction的值而言的，主轴和交叉轴是相对于flexDireaction的值而言的，主轴和交叉轴是相对于flexDireaction的值而言的
-
+主轴和交叉轴是相对于flexDireaction的值而言的
 
 
 ### PureComponent
