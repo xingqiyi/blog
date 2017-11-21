@@ -33,6 +33,16 @@ var todo = {id: 0, text: "sdfasdf", completed: false};
 var b = {...todo, completed: !todo.completed}
 ```
 
+通过 ... 将 Map 的 keys 或 values 转换成数组
+```js
+let m = new Map();
+m.set('a',2332);
+m.set('b',34);
+
+var key = [...m.keys()];
+var values = [...m.values()];
+```
+
 ### Object.assign()  合并对象
 
 ```js
@@ -62,6 +72,8 @@ for (let value of values(obj)) {
 for (let [key, value] of entries(obj)) {
   console.log([key, value]); // ['a', 1], ['b', 2], ['c', 3]
 }```
+
+
 
 
 
