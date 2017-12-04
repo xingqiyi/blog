@@ -1,6 +1,10 @@
 
 ## 选择
 
+`Ctrl + /`  切换行注释
+
+`Ctrl + Shift + /`  切换块注释
+
 `Alt + 上下键`   切换行
 
 `Ctrl + 左键`     选择多个位置    可改为 Alt
@@ -12,6 +16,8 @@
 `Ctrl + Shift + L`  选中所有 重复的
 
 `Ctrl + Shift + J`  搜索时 设置条件
+
+`Ctrl + Shift + C`  转到命令行
 
 
 `F2` 重命名变量名
