@@ -23,14 +23,17 @@ docker run -i -t ubuntu:15.10 /bin/bash
 // -t:在新容器内指定一个伪终端或终端。
 // -i:允许你对容器内的标准输入 (STDIN) 进行交互。
 // exit 或者 Ctrl + D 退出
-
 ```
 
 ### 后台运行
-```
 docker run -d ubuntu:15.10 /bin/sh -c "while true; do echo hello world; sleep 1; done"
 
-```
+
+### 运行一个 web 应用
+docker run -d -p 5000:5000 training/webapp python app.py
+//容器内部的 5000 端口映射到我们本地主机的 5000 端口上
+
+
 
 ### 查看在运行的容器
 docker ps
@@ -65,12 +68,6 @@ docker rm  container
 docker rename oldName  newName
 
 
-### 运行一个 web 应用
-
-docker run -d -p 5000:5000 training/webapp python app.py
-//容器内部的 5000 端口映射到我们本地主机的 5000 端口上
-
-
 ## 镜像仓库
 
 ### 获取一个新镜像
@@ -89,8 +86,10 @@ docker rmi image
 docker rmi -f image 强制删除
 
 ### 将镜像保存成 tar 归档文件
-docker save image
+docker save image -o myimage.tar
 
+### 从归档文件创建镜像
+docker import myimage.tar imageName
 
 ## 问题记录
 
