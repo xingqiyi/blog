@@ -99,10 +99,17 @@ npm install rimraf -g
  npm install cnpm -g --registry=https://registry.npm.taobao.org
 cnpm跟npm用法完全一致，只是在执行命令时将npm改为cnpm（以下操作将以cnpm代替npm）
 
-
-jshint 使用:
+## jshint 使用:
 npm install jshint -g
 jshint ./app/model.js
 
 
 
+
+## serve 
+
+serve help 查看参数
+
+serve build 发布build文件夹
+
+serve build -p 3000
