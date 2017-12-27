@@ -1,4 +1,16 @@
 
+
+数据的改变发生通常是通过用户交互行为或者浏览器行为（如路由跳转等）触发的，
+
+当此类行为会改变数据的时候可以通过 dispatch 发起一个 action，
+
+如果是同步行为会直接通过 Reducers 改变 State ，
+
+如果是异步行为（副作用）会先触发 Effects 然后流向 Reducers 最终改变 State，
+ 
+<img src="https://zos.alipayobjects.com/rmsportal/PPrerEAKbIoDZYr.png" width="807" />
+
+
 ### 组件定义
 
 React Component 有 3 种定义方式 
@@ -84,10 +96,10 @@ app.model({
 });
 ```
 
-put 用于触发 action
-call 用于调用异步逻辑
-select 用于从 state 里获取数据
-
+- put  用来发起一条action
+- call 以异步的方式调用函数
+- select 从state中获取相关的数据
+- take 获取发送的数据
 
 ### 3. Subscription
 用于订阅一个数据源，然后根据需要 dispatch 相应的 action。
