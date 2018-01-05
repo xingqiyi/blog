@@ -107,7 +107,7 @@ body {
 
 form.searchBox {
   width: 180px;
-  border: 1px solid #4682BE;
+  border: 1px solid #e2e2e2;
   height:20px;
   position: relative;
 }
@@ -125,7 +125,7 @@ input[type=search] {
 
 input.searchButton {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 160px;
   height: 18px;
 }
