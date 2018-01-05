@@ -85,25 +85,23 @@
 
   ### 命名空间
 
-    ```
-      #bundle {
-      .button () {
-        display: block;
-        border: 1px solid black;
-        background-color: grey;
-        &:hover { background-color: white }
-      }
-      .tab { ... }
-      .citation { ... }
+  ```css
+  #bundle {
+    .button () {
+      display: block;
+      border: 1px solid black;
+      background-color: grey;
+      &:hover { background-color: white }
     }
-   
-    //你只需要 这样引入 .button:
-
-    #header a {
-      color: orange;
-      #bundle > .button;
-    }
-    ```
+    .tab { ... }
+    .citation { ... }
+  }
+  /* 你只需要 这样引入 .button: */
+  #header a {
+    color: orange;
+    #bundle > .button;
+  }
+  ```
 
 
 ### JavaScript 表达
