@@ -9,8 +9,8 @@
 1. [前言](#README)
 
 ### Frontend
-1. [js](#src/js)
-1. [css](#src/css)
+1. [es6](#src/js)
+1. [css3](#src/css)
 1. [less](#src/less)
 
 ### Tools
