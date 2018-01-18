@@ -85,6 +85,9 @@ npm install，则会根据package.json下载所有需要的包，
 npm install --production只下载dependencies节点的包）。
 
 
+如果你希望，一个模块不管是否安装过，npm 都要强制重新安装，可以使用-f或--force参数。
+
+
 3.3、使用npm卸载插件：npm uninstall <name> [-g] [--save-dev]  PS：不要直接删除本地插件包
 删除全部插件：借助rimraf：
 npm install rimraf -g
@@ -106,7 +109,7 @@ jshint ./app/model.js
 
 
 
-## serve 
+## serve
 
 serve help 查看参数
 
