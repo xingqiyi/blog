@@ -52,8 +52,8 @@ CSS Modules 默认是局部作用域的，想要声明一个全局规则，可�
   color: green;
 }
 /* 然后在引用的时候： */
-<App className={styles.title} /> // red
-<App className="title" />        // green
+<App className={styles.title} />   /* red */  
+<App className="title" />          /* green */  
 ```
 
 
@@ -95,6 +95,9 @@ app.model({
   },
 });
 ```
+
+
+
 
 - put  用来发起一条action
 - call 以异步的方式调用函数
