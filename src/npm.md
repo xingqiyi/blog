@@ -84,7 +84,6 @@ npm install gulp-less --save-dev
 npm install，则会根据package.json下载所有需要的包，
 npm install --production只下载dependencies节点的包）。
 
-
 如果你希望，一个模块不管是否安装过，npm 都要强制重新安装，可以使用-f或--force参数。
 
 
@@ -99,8 +98,19 @@ npm install rimraf -g
 3.6、当前目录已安装插件：npm list
 
 
- npm install cnpm -g --registry=https://registry.npm.taobao.org
-cnpm跟npm用法完全一致，只是在执行命令时将npm改为cnpm（以下操作将以cnpm代替npm）
+## npm 源管理工具 nrm
+
+```
+npm install -g nrm
+nrm ls
+切换源
+nrm use taobao
+添加源  可设置私有源
+nrm add  <registry> <url> [home]
+测试速度
+nrm test 
+
+```
 
 ## jshint 使用:
 npm install jshint -g

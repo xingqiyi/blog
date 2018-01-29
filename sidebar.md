@@ -36,13 +36,13 @@
 1. [node](#src/node)
 1. [pm2](#src/pm2)
 1. [redis](#src/redis)
-1. [redis](#src/redis)
 
-### Linux
+### 系统
 1. [docker](#src/docker)
 1. [shell](#src/shell)
 1. [linux](#src/linux)
 1. [kubuntu](#src/kubuntu)
+1. [mac 快捷键](#src/mac快捷键)
 
 
 
