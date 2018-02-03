@@ -1,3 +1,10 @@
+命令查询
+apropos "words"
+
+
+查看命令历史
+history 
+
 
 
 限制cpu占用 工具 cpulimit
