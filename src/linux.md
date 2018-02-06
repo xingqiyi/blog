@@ -5,8 +5,12 @@ apropos "words"
 查看命令历史
 history 
 
+查看3000端口的占用情况
+lsof -i:3000
 
-
+杀进程
+kill -9 pid
+ 
 限制cpu占用 工具 cpulimit
 cpulimit -e firefox -l 30
 
@@ -150,9 +154,9 @@ sudo apt-get install gedit
 端口:
 
 一、查看哪些端口被打开  netstat -anp
-二、关闭端口号:iptables -A INPUT -p tcp --drop 端口号-j DROP
+二、关闭端口号:iptables -A INPUT -p tcp --drop 端口号 -j DROP
 　　iptables -A OUTPUT -p tcp --dport 端口号-j DROP
-三、打开端口号：iptables -A INPUT -ptcp --dport  端口号-j ACCEPT
+三、打开端口号：iptables -A INPUT -ptcp --dport  端口号 -j ACCEPT
 四、以下是linux打开端口命令的使用方法。
 　　nc -lp 23 &(打开23端口，即telnet)
 　　netstat -an | grep 23 (查看是否打开23端口)

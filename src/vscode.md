@@ -54,7 +54,7 @@
 `Shift + Alt + U`  上传
 `Shift + Alt + D`  下载
 
---------------------
+<!-- --------------------
 GITHUB TOKEN: 7bf4addb6689677bb2f56dec8e78ad1f4b865f38
 GITHUB GIST: 873bd7e41a7481209f6841dc5aa3c161
 GITHUB GIST TYPE: Secret
@@ -63,7 +63,7 @@ GITHUB GIST TYPE: Secret
 
 
 将 GITHUB GIST 赋给  vscode 用户设置中的
-"sync.gist": "873bd7e41a7481209f6841dc5aa3c161",
+"sync.gist": "873bd7e41a7481209f6841dc5aa3c161", -->
 
 
 
